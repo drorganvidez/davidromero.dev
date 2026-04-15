@@ -4,7 +4,7 @@ title: research
 permalink: /research/
 ---
 
-# research
+<h1># research</h1>
 
 <div class="prompt-line"><span class="prompt-user">david@dev</span>:<span class="prompt-path">~/research</span>$ cat thesis.md</div>
 

@@ -25,6 +25,7 @@ html, body {
   font-size: 15px;
   line-height: 1.6;
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -35,8 +36,14 @@ body {
   display: flex;
   flex-direction: column;
 }
-main.container { flex: 1 0 auto; }
+main.container { flex: 1 0 auto; min-width: 0; }
 .footer { flex-shrink: 0; }
+
+/* global guards against overflow */
+img, svg, video, canvas, iframe { max-width: 100%; height: auto; }
+pre, code { max-width: 100%; }
+.post, .project, .post-content, .section, .terminal { min-width: 0; }
+.post-content { overflow-wrap: anywhere; word-break: break-word; }
 
 ::selection { background: rgba(57, 211, 83, 0.3); color: #fff; }
 
@@ -75,6 +82,7 @@ a:hover { color: var(--accent); border-bottom-color: var(--accent); }
   font-weight: 700;
   border: none;
 }
+.brand .cursor { margin-left: 0.35em; }
 .brand-prompt { color: var(--accent); }
 .brand-name { color: var(--fg); }
 .nav-links {
@@ -226,6 +234,7 @@ h3 { color: var(--accent-2); }
   padding: 0;
   margin: 0;
 }
+.project-list { margin-top: 1.2rem; }
 .recent-list li {
   padding: 0.6rem 0;
   border-bottom: 1px solid var(--border);
@@ -248,11 +257,12 @@ h3 { color: var(--accent-2); }
 .project-list li {
   border: 1px solid var(--border);
   border-radius: 6px;
-  padding: 0.9rem 1rem;
-  margin-bottom: 0.8rem;
+  padding: 1.1rem 1.2rem;
+  margin-bottom: 1.4rem;
   background: var(--bg-elev);
   transition: border-color 0.15s ease, transform 0.15s ease;
 }
+.project-list li:last-child { margin-bottom: 0; }
 .project-list li:hover {
   border-color: var(--accent);
   transform: translateY(-1px);
@@ -295,6 +305,8 @@ h3 { color: var(--accent-2); }
   border-radius: 6px;
   padding: 1rem;
   overflow-x: auto;
+  white-space: pre-wrap;
+  word-break: break-word;
 }
 .post-content pre code {
   background: transparent;

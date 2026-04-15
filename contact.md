@@ -4,7 +4,7 @@ title: contact
 permalink: /contact/
 ---
 
-# contact
+<h1># contact</h1>
 
 <div class="prompt-line"><span class="prompt-user">david@dev</span>:<span class="prompt-path">~/contact</span>$ cat links.txt</div>
 
