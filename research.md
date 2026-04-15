@@ -4,9 +4,11 @@ title: research
 permalink: /research/
 ---
 
-<h1># research</h1>
+<section class="section" markdown="1">
 
-<div class="prompt-line"><span class="prompt-user">david@dev</span>:<span class="prompt-path">~/research</span>$ cat thesis.md</div>
+<h1># investigación</h1>
+
+<div class="prompt-line"><span class="prompt-user">david@dev</span>:<span class="prompt-path">~/investigacion</span>$ cat thesis.md</div>
 
 ## PhD Thesis
 
@@ -42,3 +44,5 @@ Infraestructura integrada para el ciclo de vida completo de modelos UVL como art
 ## stack
 
 Python · Flask · SQLAlchemy · Flamapy · UVL · Docker · Redis · Elasticsearch · GitHub Actions · JavaScript · React · Next.js · Java · Spring Boot · iOS · Android · Linux · sistemas operativos · virtualización
+
+</section>

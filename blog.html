@@ -6,14 +6,14 @@ permalink: /blog/
 <section class="section">
   <h1># blog</h1>
   <div class="prompt-line"><span class="prompt-user">david@dev</span>:<span class="prompt-path">~/blog</span>$ ls -t</div>
-  <ul class="post-list">
+  <ul class="post-list blog-list">
     {% for post in site.posts %}
       <li>
         <time>{{ post.date | date: "%Y-%m-%d" }}</time>
         <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
       </li>
     {% else %}
-      <li><em>// empty directory — writing soon</em></li>
+      <li><em>// directorio vacío, escribo pronto</em></li>
     {% endfor %}
   </ul>
 </section>

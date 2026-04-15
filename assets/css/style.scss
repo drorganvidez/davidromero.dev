@@ -204,6 +204,7 @@ a:hover { color: var(--accent); border-bottom-color: var(--accent); }
   padding: 2rem 0;
   border-top: 1px dashed var(--border);
   margin-top: 2rem;
+  text-align: left;
 }
 .section:first-of-type { border-top: none; margin-top: 0; }
 
@@ -242,17 +243,24 @@ h3 { color: var(--accent-2); }
 .recent-list li:last-child { border-bottom: none; }
 .recent-list .prompt { color: var(--accent); margin-right: 0.4rem; }
 
+.post-list {
+  padding-left: 0;
+  margin-left: 0;
+}
 .post-list li {
   display: flex;
   gap: 1rem;
   padding: 0.4rem 0;
   align-items: baseline;
+  margin-left: 0;
+  padding-left: 0;
 }
 .post-list time {
   color: var(--fg-dim);
   font-size: 0.85rem;
   min-width: 6rem;
 }
+.blog-list { margin-top: 1.2rem; }
 
 .project-list li {
   border: 1px solid var(--border);
