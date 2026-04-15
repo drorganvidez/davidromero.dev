@@ -276,6 +276,7 @@ h3 { color: var(--accent-2); }
 }
 
 /* post */
+.post, .project { padding-top: 2.5rem; }
 .post-header { margin-bottom: 1.5rem; }
 .post-header time { color: var(--fg-dim); font-size: 0.85rem; }
 .post-content { color: var(--fg); }

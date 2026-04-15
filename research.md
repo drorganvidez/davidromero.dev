@@ -16,7 +16,6 @@ permalink: /research/
 - Departamento de Lenguajes y Sistemas Informáticos
 - Defensa: junio 2026 · **International Doctorate Mention**
 - Directores: **Dr. David Benavides Cuevas** y **Dr. José Ángel Galindo Duarte**
-- Revisores internacionales: Prof. Rick Rabiser (JKU Linz, Austria) · Prof. Alexander Felfernig (TU Graz, Austria)
 
 ## research lines
 
@@ -42,4 +41,4 @@ Infraestructura integrada para el ciclo de vida completo de modelos UVL como art
 
 ## stack
 
-Python · Flask · SQLAlchemy · Flamapy · UVL · Docker · Redis · Elasticsearch · GitHub Actions · JavaScript · React · Next.js · Java · Spring Boot · iOS · Android
+Python · Flask · SQLAlchemy · Flamapy · UVL · Docker · Redis · Elasticsearch · GitHub Actions · JavaScript · React · Next.js · Java · Spring Boot · iOS · Android · Linux · sistemas operativos · virtualización
