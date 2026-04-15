@@ -1,0 +1,21 @@
+---
+layout: default
+title: projects
+permalink: /projects/
+---
+<section class="section">
+  <h1># projects</h1>
+  <div class="prompt-line"><span class="prompt-user">david@dev</span>:<span class="prompt-path">~/projects</span>$ ls -la</div>
+  <ul class="project-list">
+    {% for p in site.projects %}
+      <li>
+        <a href="{{ p.url | relative_url }}">
+          <span class="perm">drwxr-xr-x</span>
+          <span class="title">{{ p.title }}</span>
+          {% if p.stack %}<span class="stack-inline">{{ p.stack | join: ', ' }}</span>{% endif %}
+        </a>
+        {% if p.summary %}<p class="summary">{{ p.summary }}</p>{% endif %}
+      </li>
+    {% endfor %}
+  </ul>
+</section>

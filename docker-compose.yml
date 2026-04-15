@@ -1,0 +1,26 @@
+services:
+  jekyll:
+    build: .
+    container_name: davidromero-dev
+    ports:
+      - "4000:4000"
+      - "35729:35729"
+    volumes:
+      - .:/site
+      - bundle_cache:/usr/local/bundle
+    environment:
+      - JEKYLL_ENV=development
+
+  build:
+    build: .
+    container_name: davidromero-dev-build
+    profiles: ["build"]
+    volumes:
+      - .:/site
+      - bundle_cache:/usr/local/bundle
+    environment:
+      - JEKYLL_ENV=production
+    command: bundle exec jekyll build
+
+volumes:
+  bundle_cache:

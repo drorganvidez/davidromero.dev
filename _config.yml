@@ -1,0 +1,48 @@
+title: David Romero Organvídez
+tagline: "SPL researcher · Full-stack engineer"
+description: >-
+  Personal site of David Romero Organvídez — PhD candidate in Software Product
+  Lines, full-stack engineer. Research, projects, and writing.
+url: "https://davidromero.dev"
+baseurl: ""
+author:
+  name: David Romero Organvídez
+  email: drorganvidez@gmail.com
+  github: drorganvidez
+
+permalink: /blog/:year/:month/:day/:title/
+timezone: Europe/Madrid
+
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+
+defaults:
+  - scope:
+      path: ""
+      type: posts
+    values:
+      layout: post
+  - scope:
+      path: ""
+      type: projects
+    values:
+      layout: project
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+exclude:
+  - Dockerfile
+  - docker-compose.yml
+  - Gemfile
+  - Gemfile.lock
+  - README.md
+  - vendor
+  - .github
+
+sass:
+  style: compressed

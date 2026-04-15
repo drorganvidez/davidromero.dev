@@ -1,0 +1,13 @@
+---
+layout: default
+---
+<article class="project">
+  <header class="post-header">
+    <div class="prompt">david@dev:~/projects$ ./show --name "{{ page.title }}"</div>
+    <h1>{{ page.title }}</h1>
+    {% if page.stack %}<p class="stack">{% for s in page.stack %}<span class="tag">{{ s }}</span>{% endfor %}</p>{% endif %}
+  </header>
+  <div class="post-content">
+    {{ content }}
+  </div>
+</article>
