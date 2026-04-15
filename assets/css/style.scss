@@ -267,11 +267,22 @@ h3 { color: var(--accent-2); }
   border-color: var(--accent);
   transform: translateY(-1px);
 }
-.project-list a { color: var(--fg); border: none; display: block; }
+.project-list a.project-card {
+  color: var(--fg);
+  border: none;
+  display: block;
+  cursor: pointer;
+}
+.project-list .project-head { display: block; }
 .project-list .perm { color: var(--yellow); margin-right: 0.8rem; font-size: 0.85rem; }
 .project-list .title { color: var(--accent-2); font-weight: 700; }
 .project-list .stack-inline { color: var(--fg-dim); font-size: 0.82rem; margin-left: 0.7rem; }
-.project-list .summary { color: var(--fg-dim); font-size: 0.9rem; margin: 0.3rem 0 0; }
+.project-list .summary {
+  display: block;
+  color: var(--fg-dim);
+  font-size: 0.9rem;
+  margin-top: 0.4rem;
+}
 
 /* tags */
 .tag {

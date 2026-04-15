@@ -5,9 +5,10 @@ date: 2026-04-15
 
 Estoy a punto de depositar la tesis y no me lo creo. Llevo días con el nudo en
 el estómago, releyendo capítulos por enésima vez y revisando que cada DOI
-apunte a donde tiene que apuntar. La defensa será, presumiblemente, entre
-junio y julio, y aunque sobre el papel "ya está", la sensación es más bien la
-de quien está a punto de saltar sin paracaídas.
+apunte a donde tiene que apuntar. La memoria casi está, pero ahora toca
+empezar con el tooooodo el papeleo que viene detrás. La defensa, si sale bien
+el papeleo, caerá entre junio y julio. Sobre el papel "ya está", pero la
+sensación es más bien la de quien está a punto de saltar sin paracaídas.
 
 Han sido muchos años. Muchos. De picar código hasta las tantas, de romper
 UVLHub y levantarlo al día siguiente, de reescribir `SPLENT` desde cero porque

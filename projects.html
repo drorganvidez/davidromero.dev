@@ -9,12 +9,14 @@ permalink: /projects/
   <ul class="project-list">
     {% for p in site.projects %}
       <li>
-        <a href="{{ p.url | relative_url }}">
-          <span class="perm">drwxr-xr-x</span>
-          <span class="title">{{ p.title }}</span>
-          {% if p.stack %}<span class="stack-inline">{{ p.stack | join: ', ' }}</span>{% endif %}
+        <a href="{{ p.url | relative_url }}" class="project-card">
+          <span class="project-head">
+            <span class="perm">drwxr-xr-x</span>
+            <span class="title">{{ p.title }}</span>
+            {% if p.stack %}<span class="stack-inline">{{ p.stack | join: ', ' }}</span>{% endif %}
+          </span>
+          {% if p.summary %}<span class="summary">{{ p.summary }}</span>{% endif %}
         </a>
-        {% if p.summary %}<p class="summary">{{ p.summary }}</p>{% endif %}
       </li>
     {% endfor %}
   </ul>
