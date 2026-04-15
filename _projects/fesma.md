@@ -1,8 +1,8 @@
 ---
 title: FESMA Platform
 summary: "Rediseño arquitectónico de la Federación Española de Sociedades Mágicas."
-stack: [Python, Flask, SQLAlchemy, Docker, PostgreSQL]
-order: 1
+stack: [Python, Flask, SQLAlchemy, Docker]
+order: 3
 ---
 
 Rediseño completo desde cero de la plataforma de la **Federación Española de
@@ -14,5 +14,4 @@ Sociedades Mágicas**. No solo UI: arquitectura, modelo de datos y producto.
 - Sistema de gestión de miembros: alta, cuotas, control interno.
 - Enfoque **producto modular**, alineado con principios SPL.
 - Lógica de cuotas por socio — nuevo modelo económico de la federación.
-- Base para automatización de **certificaciones de calidad** de asociaciones.
 - Paneles de administración y gestión centralizada.

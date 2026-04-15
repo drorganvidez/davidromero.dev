@@ -32,7 +32,11 @@ body {
     radial-gradient(ellipse at top, rgba(57, 211, 83, 0.05), transparent 60%),
     radial-gradient(ellipse at bottom right, rgba(121, 192, 255, 0.04), transparent 60%);
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }
+main.container { flex: 1 0 auto; }
+.footer { flex-shrink: 0; }
 
 ::selection { background: rgba(57, 211, 83, 0.3); color: #fff; }
 
@@ -87,6 +91,14 @@ a:hover { color: var(--accent); border-bottom-color: var(--accent); }
   border: none;
 }
 .nav-links a:hover { color: var(--accent); }
+.nav-links a.active {
+  color: var(--accent);
+  text-shadow: 0 0 6px rgba(57, 211, 83, 0.35);
+}
+.nav-links a.active::before {
+  content: "> ";
+  color: var(--accent);
+}
 
 /* ---------- HERO / TERMINAL ---------- */
 .hero { padding: 2.5rem 0 1.5rem; }
@@ -123,9 +135,21 @@ a:hover { color: var(--accent); border-bottom-color: var(--accent); }
   font-size: 0.92rem;
   line-height: 1.65;
   color: var(--fg);
+  min-height: 18rem;
+}
+.terminal-body .term-line {
+  display: block;
   white-space: pre-wrap;
   word-break: break-word;
 }
+.terminal-body .term-out {
+  color: var(--fg);
+  margin-bottom: 0.4rem;
+}
+.terminal-body .term-cmd {
+  margin-top: 0.1rem;
+}
+.prompt-prefix { display: inline; }
 
 .prompt-line { display: block; }
 .prompt-user { color: var(--accent); font-weight: 700; }
@@ -134,24 +158,38 @@ a:hover { color: var(--accent); border-bottom-color: var(--accent); }
 
 .cursor {
   display: inline-block;
+  width: 0.6ch;
+  height: 1em;
   background: var(--accent);
-  color: var(--accent);
-  width: 0.55rem;
-  height: 1rem;
-  vertical-align: middle;
-  margin-left: 2px;
-  animation: blink 1s steps(1) infinite;
+  vertical-align: -0.15em;
+  margin-left: 1px;
+  animation: blink 1.05s steps(2, jump-none) infinite;
+  text-indent: -9999px;
+  overflow: hidden;
+  box-shadow: 0 0 6px rgba(57, 211, 83, 0.45);
 }
 @keyframes blink {
-  50% { opacity: 0; }
+  0%, 50%   { opacity: 1; }
+  50.01%, 100% { opacity: 0; }
 }
 
+/* terminal sequential reveal */
+.term-line { display: block; }
+.term-line.hidden { display: none; }
+
+.typed { position: relative; }
 .typed::after {
-  content: "▌";
-  color: var(--accent);
-  animation: blink 1s steps(1) infinite;
+  content: "";
+  display: inline-block;
+  width: 0.6ch;
+  height: 1em;
+  background: var(--accent);
+  vertical-align: -0.15em;
+  margin-left: 1px;
+  animation: blink 1.05s steps(2, jump-none) infinite;
+  box-shadow: 0 0 6px rgba(57, 211, 83, 0.45);
 }
-.typed.done::after { content: ""; }
+.typed.done::after { display: none; }
 
 /* ---------- SECTIONS ---------- */
 .section {

@@ -8,51 +8,63 @@ title: whoami
       <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
       <span class="terminal-title">david@dev: ~ — zsh</span>
     </div>
-    <pre class="terminal-body"><span class="prompt-line"><span class="prompt-user">david@dev</span>:<span class="prompt-path">~</span>$ <span class="typed" data-typed='whoami'></span></span>
-<span class="out">David Romero Organvídez</span>
-<span class="out">(almost) PhD in Software Engineering · Software Product Lines</span>
-<span class="out">full-stack engineer — Python, Java, JS/TS, Swift, Kotlin</span>
-
-<span class="prompt-line"><span class="prompt-user">david@dev</span>:<span class="prompt-path">~</span>$ <span class="typed" data-typed='cat skills.json | jq .'></span></span>
-<span class="out">{
-  "research":  ["SPL", "UVL", "feature models", "open science", "reproducibility"],
-  "backend":   ["Python", "Flask", "Django", "Java", "Spring Boot"],
-  "frontend":  ["React", "Next.js", "JavaScript modular", "Mustache"],
-  "mobile":    ["iOS", "Android"],
-  "infra":     ["Docker", "Docker Compose", "Redis", "Elasticsearch"],
-  "devops":    ["GitHub Actions", "CI/CD"]
-}</span>
-
-<span class="prompt-line"><span class="prompt-user">david@dev</span>:<span class="prompt-path">~</span>$ <span class="typed" data-typed='ls ~/now'></span></span>
-<span class="out">thesis.tex    flamapy/    uvl-tooling/    fesma-platform/</span>
-
-<span class="prompt-line"><span class="prompt-user">david@dev</span>:<span class="prompt-path">~</span>$ <span class="cursor">_</span></span></pre>
+    <div class="terminal-body" id="terminal-body" data-session='[
+      {"cmd":"whoami","out":"David Romero Organvídez\nPhD candidate — Universidad de Sevilla (junio 2026)\nInternational Doctorate Mention"},
+      {"cmd":"cat thesis.json | jq .","out":"{\n  \"title\":      \"UVLHub: A Variability-centered Open Science Software Ecosystem\",\n  \"subtitle\":   \"Supporting Reproducible and Collaborative Research\",\n  \"advisors\":   [\"Dr. David Benavides Cuevas\", \"Dr. José Ángel Galindo Duarte\"],\n  \"department\": \"Lenguajes y Sistemas Informáticos — US\",\n  \"keywords\":   [\"SPL\", \"UVL\", \"feature models\", \"open science\", \"reproducibility\"]\n}"},
+      {"cmd":"ls ~/contributions","out":"uvlhub/    uvlrepo/    uvlgen/    uvlmng/    splent/    flamapy-contrib/"}
+    ]'></div>
   </div>
 </section>
 
 <section class="section">
   <h2># about</h2>
   <p>
-    Soy investigador en <strong>Software Product Lines</strong>, con foco en
-    modelado de variabilidad (UVL), análisis automático de feature models,
-    trazabilidad en forks de SPLs y reproducibilidad científica.
-    En paralelo construyo producto: arquitecturas full-stack, DevOps y CI/CD.
+    Soy <strong>Ingeniero del Software</strong> por la Universidad de Sevilla
+    e investigador en <strong>Software Product Lines (SPL)</strong> y
+    <strong>Open Science</strong>. Mi tesis propone
+    <strong>UVLHub</strong>, un ecosistema integrado para compartir, generar y
+    gestionar modelos de variabilidad basados en <strong>UVL</strong> (Universal
+    Variability Language) como artefactos de investigación reproducibles.
+  </p>
+  <p>
+    En paralelo desarrollo <strong>SPLENT</strong>, un toolkit que materializa
+    esos modelos UVL en software ejecutable — cerrando el gap entre la
+    especificación formal de variabilidad y la infraestructura que la pone en
+    producción.
   </p>
 </section>
 
 <section class="section">
-  <h2># recent</h2>
+  <h2># contributions</h2>
   <ul class="recent-list">
     <li>
       <span class="prompt">$</span>
-      <strong>FESMA platform</strong> — rediseño arquitectónico desde cero de la
-      Federación Española de Sociedades Mágicas: modelo de datos multi-asociación,
-      gestión de socios y cuotas, base para certificaciones de calidad.
+      <strong>UVLHub ecosystem</strong> — infraestructura integrada para el
+      ciclo de vida de modelos UVL como artefactos de investigación (sharing,
+      generation, management).
     </li>
     <li>
       <span class="prompt">$</span>
-      <strong>PhD — SPL & Open Science</strong> — trazabilidad y análisis de
-      feedback en desarrollos derivados, integración DevOps en pipelines SPL.
+      <strong>UVLRepo</strong> (<a href="https://www.uvlhub.io">uvlhub.io</a>) —
+      repositorio domain-specific con validación sintáctica, metadatos
+      estructurados, DOIs vía Zenodo y REST API.
+    </li>
+    <li>
+      <span class="prompt">$</span>
+      <strong>UVLGen</strong> — generación controlada de modelos UVL: random
+      paramétrica y LLM-based synthesis.
+    </li>
+    <li>
+      <span class="prompt">$</span>
+      <strong>UVLMng</strong> — workflow de gestión en 4 etapas (parsing,
+      analysis, visualization, editing) integrando UVL.js, Flamapy, FM Fact
+      Label y flamapy.ide.
+    </li>
+    <li>
+      <span class="prompt">$</span>
+      <strong>SPLENT</strong> (<a href="https://docs.splent.io">docs.splent.io</a>)
+      — toolkit para materializar modelos UVL en aplicaciones Python/Flask
+      orquestadas con Docker.
     </li>
   </ul>
 </section>
