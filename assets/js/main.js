@@ -100,3 +100,31 @@
 
   start();
 })();
+
+// Copy-link button in share panel
+(() => {
+  document.querySelectorAll(".share-btn.copy").forEach((btn) => {
+    btn.addEventListener("click", async () => {
+      const url = btn.dataset.copyUrl || location.href;
+      const label = btn.querySelector(".copy-text");
+      try {
+        await navigator.clipboard.writeText(url);
+      } catch (_) {
+        const ta = document.createElement("textarea");
+        ta.value = url;
+        document.body.appendChild(ta);
+        ta.select();
+        document.execCommand("copy");
+        ta.remove();
+      }
+      const original = label ? label.textContent : "";
+      if (label) label.textContent = "¡Copiado!";
+      btn.classList.add("copied");
+      setTimeout(() => {
+        if (label) label.textContent = original;
+        btn.classList.remove("copied");
+      }, 1600);
+    });
+  });
+})();
+

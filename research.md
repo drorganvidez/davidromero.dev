@@ -1,7 +1,7 @@
 ---
 layout: default
-title: research
-permalink: /research/
+title: investigación
+permalink: /investigacion/
 ---
 
 <section class="section" markdown="1">

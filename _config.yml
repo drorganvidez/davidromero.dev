@@ -33,7 +33,7 @@ timezone: Europe/Madrid
 collections:
   projects:
     output: true
-    permalink: /projects/:path/
+    permalink: /proyectos/:path/
 
 defaults:
   - scope:

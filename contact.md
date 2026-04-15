@@ -1,7 +1,7 @@
 ---
 layout: default
-title: contact
-permalink: /contact/
+title: contacto
+permalink: /contacto/
 ---
 
 <section class="section" markdown="1">
@@ -15,6 +15,7 @@ permalink: /contact/
 - **linkedin** — <a href="https://www.linkedin.com/in/davidromeroorganvidez/">davidromeroorganvidez</a>
 - **uvlhub** — <a href="https://www.uvlhub.io">uvlhub.io</a>
 - **splent** — <a href="https://docs.splent.io">docs.splent.io</a>
+- **us** — <a href="https://personal.us.es/drorganvidez/">personal.us.es/drorganvidez</a>
 - **affiliation** — Departamento de Lenguajes y Sistemas Informáticos, Universidad de Sevilla
 
 </section>
