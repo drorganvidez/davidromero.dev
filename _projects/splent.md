@@ -5,10 +5,19 @@ stack: [Python, Flask, Docker, UVL, Flamapy, PyPI]
 order: 2
 ---
 
-**[SPLENT](https://docs.splent.io)** cierra el gap entre la especificación formal
+**[SPLENT](https://splent.io)** cierra el gap entre la especificación formal
 de variabilidad (un modelo UVL) y el software real que debe ejecutarse. El modelo
 UVL deja de ser un artefacto pasivo y pasa a gobernar la construcción del producto:
 cada configuración se valida formalmente antes de compilar una sola línea de código.
+
+## dónde vive
+
+- **[splent.io](https://splent.io)** — la landing del proyecto.
+- **[docs.splent.io](https://docs.splent.io)** — documentación.
+- **[git.splent.io](https://git.splent.io)** — Forgejo propio, fuente de verdad
+  del framework, la CLI y todas las features.
+- **[marketplace.splent.io](https://marketplace.splent.io)** — catálogo de
+  features, construido como un producto SPLENT más.
 
 ## arquitectura
 

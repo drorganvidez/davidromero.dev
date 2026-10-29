@@ -1,8 +1,10 @@
 title: David Romero Organvídez
-tagline: "SPL researcher · Full-stack engineer"
+tagline: "PhD · SPL researcher · Full-stack engineer"
 description: >-
-  David Romero Organvídez — Ingeniero del Software por la Universidad de Sevilla,
-  doctorando en Software Product Lines. Autor de UVLHub y SPLENT.
+  David Romero Organvídez — Doctor en Ingeniería Informática por la Universidad
+  de Sevilla y Profesor Sustituto Interino en el Dpto. de Lenguajes y Sistemas
+  Informáticos (Diverso Lab). Investiga en Software Product Lines y Open Science.
+  Autor de UVLHub y SPLENT.
 url: "https://davidromero.dev"
 baseurl: ""
 lang: es
@@ -25,7 +27,7 @@ social:
     - https://github.com/drorganvidez
     - https://www.linkedin.com/in/davidromeroorganvidez/
     - https://www.uvlhub.io
-    - https://docs.splent.io
+    - https://splent.io
 
 permalink: /blog/:year/:month/:day/:title/
 timezone: Europe/Madrid

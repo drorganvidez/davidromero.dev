@@ -9,9 +9,9 @@ title: whoami
       <span class="terminal-title">david@dev: ~ — zsh</span>
     </div>
     <div class="terminal-body" id="terminal-body" data-session='[
-      {"cmd":"whoami","out":"David Romero Organvídez\nPhD candidate — Universidad de Sevilla (junio 2026)\nInternational Doctorate Mention"},
-      {"cmd":"cat thesis.json | jq .","out":"{\n  \"title\":      \"UVLHub: A Variability-centered Open Science Software Ecosystem\",\n  \"subtitle\":   \"Supporting Reproducible and Collaborative Research\",\n  \"advisors\":   [\"Dr. David Benavides Cuevas\", \"Dr. José Ángel Galindo Duarte\"],\n  \"department\": \"Lenguajes y Sistemas Informáticos — US\",\n  \"keywords\":   [\"SPL\", \"UVL\", \"feature models\", \"open science\", \"reproducibility\"]\n}"},
-      {"cmd":"ls ~/contributions","out":"uvlhub/    uvlrepo/    uvlgen/    uvlmng/    splent/    flamapy-contrib/"}
+      {"cmd":"whoami","out":"David Romero Organvídez, PhD\nProfesor Sustituto Interino — Dpto. LSI, Universidad de Sevilla\nDiverso Lab"},
+      {"cmd":"cat thesis.json | jq .","out":"{\n  \"title\":    \"UVLHub: An Open Science Ecosystem for the Universal Variability Language\",\n  \"defended\": \"2026-07-14\",\n  \"grade\":    \"Sobresaliente cum laude\",\n  \"mention\":  \"International Doctorate\",\n  \"advisors\": [\"Dr. David Benavides Cuevas\", \"Dr. José Ángel Galindo Duarte\"],\n  \"keywords\": [\"SPL\", \"UVL\", \"feature models\", \"open science\", \"FAIR\"]\n}"},
+      {"cmd":"ls ~/contributions","out":"uvlhub/    uvlrepo/    uvlgen/    uvlmng/    splent/    tvt/    flamapy-contrib/"}
     ]'></div>
   </div>
 </section>
@@ -19,18 +19,57 @@ title: whoami
 <section class="section">
   <h2># about</h2>
   <p>
-    Soy <strong>Ingeniero del Software</strong> por la Universidad de Sevilla
-    e investigador en <strong>Software Product Lines (SPL)</strong> y
-    <strong>Open Science</strong>. Mi tesis propone
-    <strong>UVLHub</strong>, un ecosistema integrado para compartir, generar y
-    gestionar modelos de variabilidad basados en <strong>UVL</strong> (Universal
-    Variability Language) como artefactos de investigación reproducibles.
+    Soy <strong>Doctor en Ingeniería Informática</strong> por la Universidad de
+    Sevilla (julio 2026, sobresaliente <em>cum laude</em>, Mención
+    Internacional), Ingeniero del Software y Máster en Ingeniería del Software
+    (Cloud, Datos y Gestión de las TI) por la misma universidad. Trabajo como
+    <strong>Profesor Sustituto Interino</strong> en el Departamento de Lenguajes
+    y Sistemas Informáticos, donde investigo en
+    <a href="https://grupo.us.es/diversolab/">Diverso Lab</a> sobre
+    <strong>Software Product Lines (SPL)</strong> y <strong>Open Science</strong>.
+    Mi tesis presenta <strong>UVLHub</strong>, un ecosistema Open Science para el
+    ciclo de vida completo de los modelos de variabilidad escritos en
+    <strong>UVL</strong> (Universal Variability Language): compartirlos,
+    generarlos y gestionarlos.
   </p>
   <p>
-    En paralelo desarrollo <strong>SPLENT</strong>, un toolkit que materializa
-    esos modelos UVL en software ejecutable — cerrando el gap entre la
-    especificación formal de variabilidad y la infraestructura que la pone en
-    producción.
+    Sigo desarrollando <strong>SPLENT</strong>, un toolkit que materializa esos
+    modelos UVL en software ejecutable — cerrando el gap entre la especificación
+    formal de variabilidad y la infraestructura que la pone en producción.
+  </p>
+  <p>
+    Me tira el desarrollo web, el despliegue y la operación de servicios, el
+    sysadmin y las soluciones modulares y sostenibles. Creo en el software como
+    motor de cambio y en la ciencia abierta, la trazabilidad y el pensamiento
+    modular como pilares para construir herramientas útiles y duraderas.
+  </p>
+</section>
+
+<section class="section">
+  <h2># teaching</h2>
+  <p>Curso 2026/27:</p>
+  <ul class="recent-list">
+    <li>
+      <span class="prompt">$</span>
+      <strong>Evolución y Gestión de la Configuración</strong> — 1C, Grado en
+      Ingeniería del Software.
+    </li>
+    <li>
+      <span class="prompt">$</span>
+      <strong>Ingeniería del Software</strong> — 1C, Grado en Inteligencia
+      Artificial.
+    </li>
+    <li>
+      <span class="prompt">$</span>
+      <strong>Sistemas Operativos</strong> — 2C, Grado en Tecnologías
+      Informáticas.
+    </li>
+  </ul>
+  <p>
+    Apuntes propios (Sistemas Operativos, ADDA) en mi
+    <a href="https://personal.us.es/drorganvidez/material-docente/">web de la US</a>.
+    Tutorías: despacho F1.34, con
+    <a href="https://calendly.com/drorganvidez">cita previa</a>.
   </p>
 </section>
 
@@ -47,12 +86,13 @@ title: whoami
       <span class="prompt">$</span>
       <strong>UVLRepo</strong> (<a href="https://www.uvlhub.io">uvlhub.io</a>) —
       repositorio domain-specific con validación sintáctica, metadatos
-      estructurados, DOIs vía Zenodo y REST API.
+      estructurados, DOIs vía Zenodo y REST API. 1.614 modelos UVL y 3.800
+      usuarios de 78 países.
     </li>
     <li>
       <span class="prompt">$</span>
       <strong>UVLGen</strong> — generación controlada de modelos UVL: random
-      paramétrica y LLM-based synthesis.
+      paramétrica y generación con LLMs, con validación común tras generar.
     </li>
     <li>
       <span class="prompt">$</span>
@@ -62,9 +102,22 @@ title: whoami
     </li>
     <li>
       <span class="prompt">$</span>
-      <strong>SPLENT</strong> (<a href="https://docs.splent.io">docs.splent.io</a>)
+      <strong>SPLENT</strong> (<a href="https://splent.io">splent.io</a>)
       — toolkit para materializar modelos UVL en aplicaciones Python/Flask
       orquestadas con Docker.
+    </li>
+    <li>
+      <span class="prompt">$</span>
+      <strong>Variability thinking</strong> — la variabilidad como nueva
+      dimensión del pensamiento computacional (<strong>Best Paper</strong> en
+      SPLC 2025) y el <strong>Test of Variability Thinking</strong>, un
+      instrumento para medirla (VARIABILITY 2026).
+    </li>
+    <li>
+      <span class="prompt">$</span>
+      <strong>uvl-ecosystem.org</strong>
+      (<a href="https://uvl-ecosystem.org">uvl-ecosystem.org</a>) — la web de la
+      comunidad UVL: herramientas, estado del lenguaje y la gente detrás.
     </li>
   </ul>
 </section>
